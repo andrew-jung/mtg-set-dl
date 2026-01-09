@@ -10,7 +10,7 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function fetchAllCards(setCode) {
     const allCards = [];
-    let nextUrl = `${API_BASE_URL}/cards/search?q=set:${setCode}+lang:en+game:paper&unique=cards`;
+    let nextUrl = `${API_BASE_URL}/cards/search?q=set:${setCode}+lang:en&unique=cards`;
 
     console.log(`Starting card data fetch for set: ${setCode.toUpperCase()}`);
 
